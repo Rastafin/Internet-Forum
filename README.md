@@ -13,4 +13,4 @@ Additional features will be added to the forum in the future, including:
 
 # Usage
 
-To access the Internet Forum project, please visit the following website [CLICK HERE](www.manticore.uni.lodz.pl/~cris212/PTI/)
+To access the Internet Forum project, please visit the following website [CLICK HERE](https://www.manticore.uni.lodz.pl/~cris212/PTI/)
