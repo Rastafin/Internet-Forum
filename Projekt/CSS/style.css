@@ -1,0 +1,430 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    font-size: larger;
+    height: 100%;
+    margin: auto;
+    min-width: 1000px;
+}
+
+.body-offer {
+    background: linear-gradient(rgb(236, 236, 226), rgb(138, 135, 123));
+    min-width: 100px;
+}
+
+/* Navigation */
+
+
+nav {
+    position: sticky;
+    top: 0;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: rgb(224, 224, 221);
+    z-index: 100;
+}
+
+
+.nav-items a {
+    padding: 0px 60px 0px 60px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    font-size: medium;
+}
+
+.nav-items .nav-login {
+    float: right;
+}
+
+nav .nav-items .logo {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    float: left;
+    letter-spacing: 2px;
+}
+
+.nav-items a:hover {
+    color: #fff;
+    transition: color 0.2s ease-out 0s;
+}
+
+
+
+.nav-login .ti {
+    font-size: x-large
+}
+
+@media screen and (max-width: 1240px) {
+    .nav-items .nav-item {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav-items a {
+        padding: 0 10px 0 10px;
+    }
+}
+
+.nav-items .active {
+    color: rgb(255, 255, 255);
+}
+
+/* Header */
+
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+/**/
+.paralax {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-image: url("../Images/pexels-sebastian-palomino-1955134.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header-grey {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.288);
+    position: absolute;
+}
+
+.header-offer-container {
+    position: relative;
+    width: 100%;
+}
+
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    color: #fff;
+    margin-top: 150px;
+    z-index: 9;
+
+}
+
+.header-offer {
+    position: relative;
+    color: #000;
+    margin-top: 5%;
+}
+
+
+
+.header-text h1 {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-shadow: 6px 6px 10px #000;
+    font-size: 40px;
+}
+
+.header-offer h1 {
+    text-shadow: none;
+    letter-spacing: 12px;
+    text-shadow: 6px 6px 10px rgb(255, 255, 255);
+}
+
+#btn {
+    position: absolute;
+    /*relative*/
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 100px;
+    background: rgb(98, 185, 98);
+    font-size: 20px;
+    padding: 8px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    /*margin-top: 300px;*/
+    margin-top: 100px;
+    /**/
+    transition: all 0.3s ease;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+}
+
+#btn:hover {
+    font-size: 30px;
+}
+
+
+/* Main */
+
+main {
+    height: 230vh;
+    width: 100%;
+    background: linear-gradient(rgb(236, 236, 226), rgb(138, 135, 123));
+}
+
+
+.first-post {
+    position: static;
+    width: 40%;
+    min-height: 50vh;
+    float: left;
+    /*background-color: rgb(247, 240, 240);*/
+    /*background-color: inherit;*/
+    margin-left: 60px;
+    margin-top: 110px;
+
+}
+
+.second-post {
+    position: static;
+    width: 40%;
+    float: right;
+    min-height: 50vh;
+    margin-top: 380px;
+    margin-right: 60px;
+}
+
+.third-post {
+    position: static;
+    width: 40%;
+    float: left;
+    min-height: 50vh;
+    margin-top: 180px;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 1450px) {
+
+    .first-post,
+    .second-post,
+    .third-post {
+        width: 50%;
+        margin-top: 0px;
+        font-size: small;
+    }
+
+    main {
+        height: 280vh;
+    }
+}
+
+.date {
+    font-size: larger;
+}
+
+.post-title {
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: xx-large;
+}
+
+.post-p {
+    padding: 15px 0;
+}
+
+.post-footer {
+    padding-top: 40px;
+    font-style: oblique;
+}
+
+.second-post-text .date,
+.second-post-text .post-title {
+    text-align: right;
+}
+
+/* Main Offer */
+
+.main-offer {
+    position: relative;
+    height: 120vh;
+    background: none;
+}
+
+
+
+th,
+td {
+    border: 2px solid;
+    background-color: #fff;
+}
+
+.table-offer {
+    margin-top: 150px;
+}
+
+table {
+    margin: auto;
+    width: 70%;
+    table-layout: fixed;
+}
+
+table tr td img {
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.img-offer {
+    transition: all 1.5s ease;
+}
+
+.img-offer:hover {
+    width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .main-offer {
+        height: 80vh;
+    }
+}
+
+.info {
+    margin-top: 150px;
+}
+
+.main-offer p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: larger;
+}
+
+.download a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.2s ease-out 0s;
+}
+
+.download a:hover {
+    color: #fff;
+}
+
+/* Main Contact */
+
+.main-contact {
+    height: 120vh;
+}
+
+
+.contact-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-form {
+    /* width: 40%; */
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.contact-form input,
+.contact-form textarea {
+    text-transform: uppercase;
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    text-align: center;
+    resize: none;
+}
+
+.send {
+    cursor: pointer;
+    transition: ease all 0.5s;
+    max-width: 200px;
+}
+
+.send:hover {
+    background-color: rgb(155, 155, 149);
+}
+
+.main-info {
+    height: 60vh;
+}
+
+
+hr {
+    margin: 3cm 10vmax;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    height: 1px;
+
+}
+
+.main-login {
+    height: 120vh;
+}
+
+footer {
+    position: relative;
+    background-color: rgb(224, 224, 221);
+    text-align: center;
+    padding: 2px 0px;
+    width: 100%;
+}
+
+
+/* Login */
+
+.login-box {
+    margin-top: 200px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.login-box h1 {
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    letter-spacing: 8px;
+    text-shadow: 6px 6px 10px rgb(255, 255, 255);
+}
+
+.login-form {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: larger;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.login-form .send {
+    margin-top: 100px;
+    max-width: 200px;
+}
